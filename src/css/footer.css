@@ -1,0 +1,19 @@
+.footer {
+    background: var(--light-green-background);
+
+    
+}
+.footer-container {
+    max-width: 375px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.footer-image {
+    border-radius: 100px;
+    background: url(<path-to-image>), lightgray 0px -43.24px / 100% 194.972% no-repeat;
+}
