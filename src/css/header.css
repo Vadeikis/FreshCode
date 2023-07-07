@@ -5,12 +5,7 @@
     margin-right: auto;
   
   }
-  .header-nav{
-    display: flex;
-    gap: 8px;
-    align-items: center; 
-   
-  }
+  
   .logo{
     color: #141414;
     text-align: center;
