@@ -1,0 +1,224 @@
+.container {
+  max-width: 375px;
+  padding: 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.operations-section {
+  padding-top: 80px;
+}
+.operations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.operations-motto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.operations-title {
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+.photo-broccoli {
+  border-radius: 100px;
+}
+.operation-text {
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.035em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.instruction-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #faf3e7;
+  background-image: radial-gradient(
+    rgba(161, 196, 135, 0.69) 2.51253px,
+    transparent 0
+  );
+  background-size: 41.5px 41.5px;
+  background-position: -12px -10px;
+  border-radius: 40px;
+  margin-top: 80px;
+}
+.instruction-title {
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.instruction-list {
+  counter-reset: myCounter;
+  padding: 20px 40px 20px 0px;
+  margin-bottom: -40px;
+}
+
+.instruction-item {
+  list-style: none;
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 24px;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.035em;
+  max-width: 230px;
+}
+
+.instruction-item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  color: #141414;
+  background-color: #a1c487;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  line-height: 1.28;
+  width: 36px;
+  height: 36px;
+  left: 0;
+}
+
+/*==================TABLET MEDIA==================*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+  .operations-section {
+    padding-top: 100px;
+  }
+  .operations-container {
+    gap: 40px;
+  }
+  .operations-motto {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+  .operations-title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.1em;
+  }
+  .operation-text {
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 616px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .operation-item {
+    flex-shrink: 0;
+    max-width: 308px;
+  }
+  .operation-text .operation-item:last-child {
+    max-width: 279px;
+  }
+  .instruction-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+  }
+  .instruction-title {
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.07em;
+  }
+  .photo-girl {
+    flex-shrink: 0;
+  }
+  .instruction-list {
+    flex-grow: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .instruction-table {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/*==================DESKTOP MEDIA==================*/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .operations-section {
+    padding-top: 124px;
+  }
+  .operations-motto {
+    gap: 192px;
+    justify-content: flex-start;
+  }
+  .operations-title {
+    font-size: 48px;
+    line-height: 1.29;
+    letter-spacing: -0.12em;
+    max-width: 614px;
+  }
+  .photo-broccoli {
+    flex-shrink: 0;
+    width: 410px;
+    height: 170px;
+  }
+  .operation-text {
+    max-width: 687px;
+    letter-spacing: -0.045;
+    gap: 40px;
+  }
+  .operation-item {
+    flex-shrink: 0;
+    max-width: 330px;
+  }
+  .operation-text .operation-item:last-child {
+    max-width: 294px;
+  }
+  .instruction-container {
+    padding-top: 124px;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 110px;
+    justify-content: space-evenly;
+  }
+  .instruction-table {
+    gap: 44px;
+  }
+  .instruction-title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.1em;
+    max-width: 512px;
+  }
+  .instruction-item {
+    max-width: 353px;
+  }
+}
