@@ -97,10 +97,14 @@
 
 .hero-img-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
+  max-width: 278px;
+  height: 228px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .hero-img-wrapper {
@@ -109,12 +113,13 @@
   align-items: center;
   width: 219px;
   height: 294px;
-  transform: rotate(-104deg);
+  transform: rotate(-110deg);
   overflow: hidden;
   background-color: transparent;
   border-radius: 500px;
-  position: relative;
-  top: -15px;
+  position: absolute;
+  top: -44px;
+  z-index: 2;
 }
 
 .hero-img-background {
@@ -127,17 +132,20 @@
   border-radius: 500px;
   position: absolute;
   transform: rotate(-105deg);
+  z-index: 1;
 }
 
 .hero-img {
+  max-width: 230px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute; */
-  top: 40px;
-  left: 5px;
-  transform: rotate(104deg);
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: -8px;
+  transform: rotate(110deg);
 }
 
 .hashtag-container {
@@ -167,7 +175,7 @@
   text-transform: uppercase;
 }
 
-.active {
+.hashtag-item:is(:active, :hover, :focus) {
   background-color: #f9f7f4;
   color: var(--primary-color);
 }
