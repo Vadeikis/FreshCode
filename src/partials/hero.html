@@ -2,72 +2,128 @@
   <div class="container">
     <ul class="review-list">
       <li class="review-items">
-        <img
-          srcset="
-            ./img/hero/review1-mob.jpg    1x,
-            ./img/hero/review1-mob-2x.jpg 2x
-          "
-          src="./img/hero/review1-mob.jpg"
-          alt="photo"
-          class="review-img"
-          width="40"
-          height="40"
-        />
+        <picture class="review-img">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/hero/review1-mob.jpg    1x,
+              ./img/hero/review1-mob-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./img/hero/review1-tab.jpg    1x,
+              ./img/hero/review1-tab-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/hero/review1-pc.jpg    1x,
+              ./img/hero/review1-pc-2x.jpg 2x
+            "
+          />
+          <img src="./img/hero/review1-pc.jpg" alt="photo" />
+        </picture>
       </li>
       <li class="review-items">
-        <img
-          srcset="
-            ./img/hero/review2-mob.jpg    1x,
-            ./img/hero/review2-mob-2x.jpg 2x
-          "
-          src="./img/hero/review1-mob.jpg"
-          alt="photo"
-          class="review-img"
-          width="40"
-          height="40"
-        />
+        <picture class="review-img">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/hero/review2-mob.jpg    1x,
+              ./img/hero/review2-mob-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./img/hero/review1-tab.jpg    1x,
+              ./img/hero/review1-tab-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/hero/review2-pc.jpg    1x,
+              ./img/hero/review2-pc-2x.jpg 2x
+            "
+          />
+          <img src="./img/hero/review2-pc.jpg" alt="photo" />
+        </picture>
       </li>
       <li class="review-items">
-        <img
-          srcset="
-            ./img/hero/review3-mob.jpg    1x,
-            ./img/hero/review3-mob-2x.jpg 2x
-          "
-          src="./img/hero/review1-mob.jpg"
-          alt="photo"
-          class="review-img"
-          width="40"
-          height="40"
-        />
+        <picture class="review-img">
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/hero/review3-mob.jpg    1x,
+              ./img/hero/review3-mob-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./img/hero/review1-tab.jpg    1x,
+              ./img/hero/review1-tab-2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/hero/review3-pc.jpg    1x,
+              ./img/hero/review3-pc-2x.jpg 2x
+            "
+          />
+          <img src="./img/hero/review3-pc.jpg" alt="photo" />
+        </picture>
       </li>
       <li class="review-items"><span>2K</span>reviews</li>
     </ul>
 
-    <h1 class="hero-title">
-      Organic <span>vegetables</span> to your diet today!
-    </h1>
-    <p class="hero-text">
-      Our expertly curated vegetable baskets are made with the freshest, highest
-      quality vegetables available. Fresh Harvest Box has got you covered.
-      Fresh, high-quality vegetables in expertly curated vegetable baskets
-      delivered to you.
-    </p>
-    <button class="hero-btn" type="button">shop now</button>
+    <div class="wrapper">
+      <div class="hero-dec-container">
+        <h1 class="hero-title">
+          Organic <span>vegetables</span> to your diet today!
+        </h1>
+        <p class="hero-text">
+          Our expertly curated vegetable baskets are made with the freshest,
+          highest quality vegetables available. Fresh Harvest Box has got you
+          covered. Fresh, high-quality vegetables in expertly curated vegetable
+          baskets delivered to you.
+        </p>
+        <button class="hero-btn" type="button">shop now</button>
+      </div>
 
-    <div class="hero-img-container">
-      <div class="hero-img-background"></div>
-      <div class="hero-img-wrapper">
-        <img
-          class="hero-img"
-          srcset="
-            ./img/hero/hero-img-mob.png    1x,
-            ./img/hero/hero-img-mob-2x.png 2x
-          "
-          src="./img/hero/hero-img-mob.png"
-          alt="Girl whith vegetable"
-          width="230"
-          height="228"
-        />
+      <div class="hero-img-container">
+        <div class="hero-img-background"></div>
+        <div class="hero-img-wrapper">
+          <picture class="hero-img">
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/hero/hero-img-mob.png    1x,
+                ./img/hero/hero-img-mob-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./img/hero/hero-img-tab.png    1x,
+                ./img/hero/hero-img-tab-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/hero/hero-img-pc.png    1x,
+                ./img/hero/hero-img-pc-2x.png 2x
+              "
+            />
+            <img src="./img/hero/hero-img-pc.png" alt="Girl whith vegetable" />
+          </picture>
+        </div>
       </div>
     </div>
 
