@@ -54,7 +54,7 @@
   background-color: #fc8a11;
   color: #ffffff;
   border: none;
-  margin-left: -90px;
+  margin-left: -95px;
   padding: 15px 35px;
 }
 
@@ -81,4 +81,9 @@
   width: 335px;
   height: 388px;
   border-radius: 40px;
+  background-color: #faf3e7;
+}
+
+.image-icon {
+  fill: #a1c487b0;
 }
