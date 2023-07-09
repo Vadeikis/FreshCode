@@ -158,6 +158,7 @@ transition: fill 250ms linear;
   line-height: 18px;
   text-transform: uppercase;
 }
+
 .footer-address {
   color: var(--primary-color);
   text-align: center;

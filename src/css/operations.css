@@ -129,7 +129,7 @@
   .operations-title {
     font-size: 40px;
     line-height: 1.1;
-    letter-spacing: -0.1em;
+    letter-spacing: -1.6px;
   }
   .photo-broccoli {
     flex-shrink: 0;
@@ -197,7 +197,7 @@
   .operations-title {
     font-size: 48px;
     line-height: 1.29;
-    letter-spacing: -0.12em;
+    letter-spacing: -1.92px;
     max-width: 614px;
   }
   .photo-broccoli {
