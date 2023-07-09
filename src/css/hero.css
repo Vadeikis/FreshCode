@@ -68,6 +68,7 @@
 
 .hero-title span {
   font-style: italic;
+  color:var(--light-green-background)
 }
 
 .hero-text {
