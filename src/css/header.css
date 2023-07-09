@@ -1,30 +1,211 @@
-.container{
-    max-width: 428px;
-    padding: 17px 0px 17px 20px;
-    margin-left: auto;
-    margin-right: auto;
-  
+.header-container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-list,
+.header-item-svg {
+  display: none;
+}
+.header-nav {
+  display: flex;
+  gap: 8px;
+  padding: 17px 0px 17px 0;
+}
+.logo {
+  color: #141414;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+.header-bt {
+  position: absolute;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  right: 20px;
+  top: 13px;
+  color: #77ac63;
+}
+.header-bt:hover {
+  fill: #77ac63;
+}
+
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+.close-menu-bt {
+  position: fixed;
+  z-index: 2;
+  margin-left: auto;
+  right: 20px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.header-nav-mob {
+  display: flex;
+  gap: 8px;
+  padding: 17px 0px 17px 20px;
+}
+.mb-list {
+  max-width: 375px;
+}
+.mob-menu-item {
+  color: #fff;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+.mb-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin: 124px auto 516px auto;
+}
+.button_icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: none;
+  stroke: #77ac63;
+}
+.button_icon:hover,
+.button_icon:focus {
+  stroke: #a1c487;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mb-menu-list {
+  background-color: #a1c487;
+}
+
+.mob-menu-backet:is(:hover, :focus) {
+  color: #a1c487;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active:hover {
+  position: relative;
+  color: #467734;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+    margin: 0 auto;
   }
-  .header-nav{
-    display: flex;
-    gap: 8px;
-    align-items: center; 
-   
+  .header-bt {
+    display: none;
   }
-  .logo{
+  .header-item {
     color: #141414;
     text-align: center;
     font-family: 'DM Sans';
     font-size: 14px;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
-    text-transform: uppercase; 
   }
-.header-bt{
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    padding-right: 86px;
+  }
+  .active:hover {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #77ac63;
+  }
+
+  .header-item-svg {
     display: block;
-    margin-left: auto;
-    background-color: transparent;
-    color: #FFFFFF;
-    cursor: pointer;;
+  }
+
+  .header-item-backet {
+    stroke: #141414;
+    fill: none;
+  }
+
+  .header-item-svg {
+    position: absolute;
+    right: 0;
+    padding-right: 32px;
+  }
+  .header-item-svg:hover,
+  .header-item-svg:focus {
+    stroke: #a1c487;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .header-bt {
+    display: none;
+  }
+  .header-item-svg {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .header-logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  .header-item-svg {
+    position: absolute;
+    right: 0;
+    padding-right: 32px;
+  }
+  
+  .header-item-svg:hover,
+  .header-item-svg:focus {
+    stroke: #a1c487;
+  }
+
+  .header-item-backet:hover, .header-item-backet:focus {
+    stroke: #a1c487;
+  }
 }
