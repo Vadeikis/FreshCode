@@ -13,10 +13,14 @@
 }
 
    /* --------MODAL--------- */
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .backdrop {
  position: fixed;
-
  top: 0;
  z-index: 2;
  width: 335px;
@@ -28,7 +32,6 @@
 }
 
 .modal {
-
  position: absolute;
  top: 50%;
  left: 50%;
@@ -144,8 +147,6 @@ fill: #A1C487;
   height: 78px;
   margin-top: 33px;
   margin-right: 33px;
-
-
 
 }
 
