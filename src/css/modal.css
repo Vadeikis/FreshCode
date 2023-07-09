@@ -219,11 +219,12 @@ fill: #A1C487;
   }
 
   .backdrop {
-      width: 704px;
+      width: 744px;
       min-height: 853px;
   }
 
   .modal {
+      max-width: 624px;
       width: 100%;
       padding: 40px;
   }
@@ -245,8 +246,9 @@ fill: #A1C487;
   }
 
   .modal-checkbox {
+      margin-left: 166px;
 
-      margin: 14px 14px 216px 166px;
+      /* margin: 14px 14px 216px 166px; */
   }
 
   .modal-products-cart {
@@ -257,36 +259,43 @@ fill: #A1C487;
 
  .modal-input, .modal-textarea {
       width: 310px;
+  }
+
+ .modal-user-block {
+  display: flex;
  }
 
   .modal-girl {
       display: block;
-      bottom: 0;
       width: 444px;
       height: 413px;
       position: absolute;
       left: 414px;
       top: 450px;
-      overflow: hidden;
+      height: 100%;
+      width: 100%;
+  }
+
+  .modal-girl > img {
+      object-fit: cover;
   }
 
 
-
-  .modal-user-block {
-      display: flex;
-
-  }
 
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-      max-width: 811px;
+      max-width: 851px;
   }
 
   .backdrop {
       width: 891px;
       height: 911px;
+  }
+
+  .modal {
+      max-width: 811px;
   }
 
   .modal-products-list {
@@ -306,15 +315,16 @@ fill: #A1C487;
   }
 
   .modal-checkbox {
-
-
       margin: 14px 14px 274px 223px;
   }
 
   .modal-girl {
+      width: 444px;
+      height: 413px;
       left: 440px;
       top: 501px;
+      height: 100%;
+      width: 100%;
   }
-
 
 }
