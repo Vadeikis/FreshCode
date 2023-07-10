@@ -38,13 +38,11 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  justify-self: center;
   align-items: center;
 }
 
 .footer-logo {
   margin-right: 8px;
-  transition: fill 250ms linear;
   transition: fill 250ms linear;
 }
 
@@ -65,16 +63,6 @@
 .footer-logo-link:is(:hover, :focus) {
   fill: var(--green-background);
   color: var(--green-background);
-}
-
-.footer-logo-text {
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: -0.56px;
-  text-transform: uppercase;
 }
 
 .footer-logo-text {
@@ -194,7 +182,6 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-
   .footer-tab {
     display: flex;
     gap: 171px;
