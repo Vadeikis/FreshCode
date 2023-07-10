@@ -87,7 +87,7 @@
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.035em;
-  max-width: 225px;
+  max-width: 228px;
 }
 .instruction-item::before {
   counter-increment: myCounter;
@@ -142,13 +142,12 @@
   .operation-text {
     flex-direction: row;
     justify-content: flex-start;
-    max-width: 616px;
     font-size: 18px;
     line-height: 1.33;
   }
   .operation-item {
     flex-shrink: 0;
-    max-width: 308px;
+    max-width: 320px;
   }
   .operation-text .operation-item:last-child {
     max-width: 279px;
@@ -205,7 +204,7 @@
   .operations-title {
     font-size: 48px;
     line-height: 1.29;
-    letter-spacing: -1.92px;
+    letter-spacing: -0.12em;
     max-width: 614px;
   }
   .photo-broccoli {
@@ -215,12 +214,13 @@
   }
   .operation-text {
     max-width: 687px;
-    letter-spacing: -0.045;
+    letter-spacing: -0.045em;
     gap: 40px;
   }
   .operation-item {
     flex-shrink: 0;
-    max-width: 330px;
+    max-width: 339px;
+    letter-spacing: -0.12;
   }
   .operation-text .operation-item:last-child {
     max-width: 294px;
@@ -240,13 +240,14 @@
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.1em;
-    max-width: 512px;
+    width: 512px;
   }
   .instruction-list {
     gap: 28px;
+    width: 380px;
   }
   .instruction-item {
-    max-width: 353px;
+    max-width: 380px;
   }
   .instruction-list :not(:first-child):not(:last-child) {
     max-width: 219px;
