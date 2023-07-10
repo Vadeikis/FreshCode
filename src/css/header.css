@@ -24,6 +24,16 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
 }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-header {
+    margin-right: 8px;
+  }
+
 .header-bt {
   position: absolute;
   margin-left: auto;
@@ -98,13 +108,13 @@
   gap: 16px;
   margin: 124px auto 516px auto;
 }
-.button_icon{
+.button_icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: none;
-  stroke: #77AC63;
+  stroke: #77ac63;
 }
 .button_icon:hover,
-.button_icon:focus{
+.button_icon:focus {
   stroke: #a1c487;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -113,7 +123,6 @@
 .header-bt:focus {
   stroke: #a1c487;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .mb-menu-list {
   background-color: #a1c487;
@@ -129,8 +138,12 @@
     stroke: #77AC63;
   }
 
+.mob-menu-backet:hover {
+  stroke: #141414;
+  fill: #141414;
+}
+
 .active:hover {
-  position: relative;
   color: #467734;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -143,6 +156,7 @@
   .header-bt {
     display: none;
   }
+
   .header-item {
     color: #141414;
     text-align: center;
@@ -159,6 +173,16 @@
     gap: 14px;
     padding-right: 86px;
   }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-header {
+    margin-right: 8px;
+  }
+
   .active:hover {
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -182,10 +206,13 @@
   .header-item-svg:hover,
   .header-item-svg:focus {
     stroke: #a1c487;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .header-item-backet:hover, .header-item-backet:focus {
+  .header-item-backet:hover,
+  .header-item-backet:focus {
     stroke: #a1c487;
-}
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -205,23 +232,30 @@
     gap: 20px;
   }
   .header-logo {
+    display: flex;
+    justify-content: center;
     position: relative;
     top: 50%;
     left: 50%;
+  }
+
+  .logo-header {
+    margin-right: 8px;
   }
   .header-item-svg {
     position: absolute;
     right: 0;
     padding-right: 32px;
   }
-  
+
   .header-item-svg:hover,
   .header-item-svg:focus {
     stroke: #a1c487;
   }
 
-  .header-item-backet:hover, .header-item-backet:focus {
+  .header-item-backet:hover,
+  .header-item-backet:focus {
     stroke: #a1c487;
-    
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
