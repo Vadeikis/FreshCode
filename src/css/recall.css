@@ -133,37 +133,58 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .recall {
+  .recall-container {
+    max-width: 1280px;
     padding-top: 124px;
     padding-bottom: 124px;
     padding-left: 32px;
     padding-right: 32px;
-  }
-  .recall-container {
-    max-width: 1280px;
     display: flex;
-    flex-direction: row;
+  }
+  .recall-title {
+    width: 614px;
+    height: 100px;
+    text-align: left;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -1.92px;
+  }
+  .recall-text {
+    width: 523px;
+    height: 72px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
   }
 
   .submit-container {
-    width: 400px;
-    height: 88px;
-    margin-top: 222px;
+    width: 614px;
+    height: 340px;
+    margin-top: 98px;
     gap: 40px;
+    align-items: normal;
   }
 
   .recall-image-container {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: auto;
     width: 525px;
     height: 536px;
   }
 
   .form-recall {
+    margin-top: 40px;
     padding-left: 0;
   }
-
+  .imagine-container {
+    margin: 0;
+    width: 525px;
+    height: 536px;
+  }
   .imagine-girl {
     width: 525px;
-    height: 499px;
+    height: 536px;
   }
 }
