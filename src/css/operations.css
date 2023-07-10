@@ -191,7 +191,7 @@
   }
 }
 /*==================DESKTOP MEDIA==================*/
-/*@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .container-op {
     max-width: 1280px;
   }
@@ -251,4 +251,4 @@
   .instruction-list :not(:first-child):not(:last-child) {
     max-width: 219px;
   }
-}*/
+}
