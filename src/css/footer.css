@@ -28,6 +28,8 @@
   padding-bottom: 80px;
 }
 .footer-link-image {
+  width: 335px;
+  height: 172px;
   border-radius: 100px;
   background: url(<path-to-image>),
     lightgray 0px -43.24px / 100% 194.972% no-repeat;
@@ -36,13 +38,12 @@
   display: flex;
   gap: 8px;
   justify-content: center;
-  justify-self: center;
   align-items: center;
 }
 
 .footer-logo {
   margin-right: 8px;
-transition: fill 250ms linear;
+  transition: fill 250ms linear;
 }
 
 .footer-logo-link {
@@ -60,8 +61,8 @@ transition: fill 250ms linear;
 }
 
 .footer-logo-link:is(:hover, :focus) {
-    fill: var(--green-background);
-    color: var(--green-background);
+  fill: var(--green-background);
+  color: var(--green-background);
 }
 
 .footer-logo-text {
@@ -149,6 +150,10 @@ transition: fill 250ms linear;
 }
 .footer-contact-link {
 }
+.footer-link-image {
+  width: 349px;
+  height: 179px;
+}
 .footer-tel {
   color: var(--primary-color);
   text-align: center;
@@ -172,5 +177,68 @@ transition: fill 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
+  .footer-tab {
+    display: flex;
+    gap: 171px;
+  }
+  .footer-link-image {
+    width: 349px;
+    height: 179px;
+  }
+  .footer-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .footer-list {
+    flex-direction: column;
+  }
+  .footer-contact-list {
+    align-items: normal;
+  }
+  .footer-tel {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .footer-address {
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    width: 173px;
+    height: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    max-width: 1280px;
+  }
+  .footer-blocks {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 166px;
+  }
+  .footer-list {
+    padding-bottom: 0;
+  }
+  .footer-list-nav {
+    align-items: start;
+    padding-top: 84px;
+  }
+  .footer-tab {
+    display: flex;
+    gap: 171px;
+  }
+  .footer-tel {
+    width: 184px;
+    height: 24px;
+  }
 }
