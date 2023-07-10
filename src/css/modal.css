@@ -20,43 +20,45 @@
 }
 
 .backdrop {
- position: fixed;
- top: 0;
- z-index: 2;
- width: 335px;
- min-height: 903px;
- width: 100%;
- height: 100%;
- border: 1px solid rgba(46, 47, 66, 0.4);
- background-color: #e7e9fc;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 335px;
+  min-height: 903px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: #e7e9fc;
 }
 
 .modal {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background-color: #ffffff;
- border-radius: 20px;
- padding: 20px;
- border: none;
- box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
 }
 
 .modal-btn {
- position: absolute;
- top: 20px;
- right: 20px;
- width: 28px;
- height: 28px;
- border: none;
- background-color: transparent;
- border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
+.modal-close {
+  fill: #111;
+}
 
 .modal-title {
-
   color: #141414;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
   font-family: DM Sans;
@@ -68,7 +70,6 @@
   text-transform: uppercase;
   align-items: start;
   margin-bottom: 40px;
-
 }
 
 .modal-products-list {
@@ -77,7 +78,6 @@
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 40px;
-
 }
 
 .modal-products-item {
@@ -93,6 +93,7 @@
 .modal-products-cart {
   margin-left: 20px;
 }
+
 .modal-products-subtitle {
   color: #141414;
   font-family: DM Sans;
@@ -118,27 +119,26 @@
 
 .modal-checkbox {
   position: absolute;
-
   margin: 14px 14px 89px 265px;
 }
 
 .check-text span {
-width: 16px;
-height: 16px;
-border: 1px solid #A1C487;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #A1C487;
   border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-fill: transparent;
+  fill: transparent;
 
 }
 
 .input-chek:checked + .check-text span {
-background-color: #ffffff;
+  background-color: #ffffff;
   border-radius: 2px;
-border-color: #A1C487;
-fill: #A1C487;
+  border-color: #A1C487;
+  fill: #A1C487;
 }
 
 .modal-products-item > img {
@@ -151,6 +151,7 @@ fill: #A1C487;
 }
 
 .modal-form {
+  margin: 0 auto;
   max-width: 295px;
 }
 
@@ -158,14 +159,20 @@ fill: #A1C487;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 245px;
+  width: 100%;
   height: 46px;
-
   border-radius: 100px;
   padding: 0 24px;
   border: 1px solid rgba(20, 20, 20, 0.30);
   margin-bottom: 14px;
+  transition: border-color 300ms linear;
 }
+
+.modal-input:hover, .modal-input:focus {
+  border-color: #A1C487;
+}
+
+
 
 .modal-input::placeholder, .modal-textarea::placeholder  {
   color: rgba(20, 20, 20, 0.50);
@@ -177,15 +184,13 @@ fill: #A1C487;
 }
 
 .modal-textarea {
-  width: 245px;
+  width: 100%;
   height: 132px;
-
   border-radius: 20px;
   padding: 14px 24px;
   margin-bottom: 20px;
   resize: none;
   border: 1px solid rgba(20, 20, 20, 0.30);
-
 }
 
 .modal-form-btn {
@@ -225,13 +230,15 @@ fill: #A1C487;
   }
 
   .modal {
-      max-width: 624px;
-      width: 100%;
+
+      margin: auto;
       padding: 40px;
   }
 
   .modal-products-list {
       flex-wrap: nowrap;
+      width: 100%;
+      width: 624px;
   }
 
 
@@ -253,33 +260,48 @@ fill: #A1C487;
   }
 
   .modal-products-cart {
-      margin-top: 40px;
-      margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 
   }
 
- .modal-input, .modal-textarea {
-      width: 310px;
+  .modal-input, .modal-textarea {
+    width: 310px;
   }
 
- .modal-user-block {
-  display: flex;
- }
+  .modal-user-block {
+    display: flex;
+
+  }
+
+  .modal-form {
+    max-width: 306px;
+    margin-left: 0;
+  }
 
   .modal-girl {
-      display: block;
-      width: 444px;
-      height: 413px;
-      position: absolute;
-      left: 414px;
-      top: 450px;
-      height: 100%;
-      width: 100%;
+    display: block;
+    position: absolute;
+    left: 414px;
+    top: 415px;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/modal/modal-girl-tabl.png);
+    background-repeat: no-repeat;
+    background-size: 290px cover;
+
   }
 
-  .modal-girl > img {
-      object-fit: cover;
-  }
+
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal-girl {
+      background-image: url(../img/modal/modal-girl-tabl2x.png);}
+    }
+
+
 
 
 
@@ -287,45 +309,54 @@ fill: #A1C487;
 
 @media screen and (min-width: 1280px) {
   .container {
-      max-width: 851px;
+    max-width: 851px;
   }
 
   .backdrop {
-      width: 891px;
-      height: 911px;
+    width: 891px;
+    min-height: 911px;
   }
 
   .modal {
-      max-width: 811px;
+
+
   }
 
   .modal-products-list {
-      gap: 20px;
+    width: 811px;
+    gap: 20px;
   }
 
   .modal-products-item {
-
-
-      height: 308px;
-      width: calc((100% - 20px * 2) / 3);
+    height: 308px;
+    width: calc((100% - 20px * 2) / 3);
   }
   .modal-products-item > img {
-      width: 243px;
-      height: 200px;
-      margin: 0 7px 7px;
+    width: 243px;
+    height: 200px;
+    margin: 0 7px 7px;
   }
 
   .modal-checkbox {
-      margin: 14px 14px 274px 223px;
+    margin: 14px 14px 274px 223px;
   }
+
+
 
   .modal-girl {
-      width: 444px;
-      height: 413px;
-      left: 440px;
-      top: 501px;
-      height: 100%;
-      width: 100%;
+    left: 440px;
+    top: 461px;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/modal/modal-girl.png);
+    background-size: 444px;
   }
 
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal-girl {
+      background-image: url(../img/modal/modal-girl-tabl2x.png);
+    }
+  }
 }
