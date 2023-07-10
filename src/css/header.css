@@ -128,6 +128,16 @@
   background-color: #a1c487;
 }
 
+
+  .mob-menu-backet {
+    stroke:#fff;
+    fill: none;
+  }
+  .mob-menu-backet:hover,
+  .mob-menu-backet:focus{
+    stroke: #77AC63;
+  }
+
 .mob-menu-backet:hover {
   stroke: #141414;
   fill: #141414;
