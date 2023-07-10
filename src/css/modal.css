@@ -29,7 +29,9 @@
   height: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: #e7e9fc;
+  transition: opacity 300ms linear, visibility 300ms linear;
 }
+
 
 .modal {
   position: absolute;
@@ -41,6 +43,12 @@
   padding: 20px;
   border: none;
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 300ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .modal-btn {
@@ -194,7 +202,6 @@
 }
 
 .modal-form-btn {
-
   color: #FFF;
   font-family: DM Sans;
   font-size: 14px;
@@ -204,7 +211,16 @@
   border-radius: 100px;
   padding: 12px 24px;
   background-color: #FC8A11;
-  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: color 300ms linear, background-color 300ms linear, border-color 300ms linear;
+}
+
+.modal-form-btn:is(:hover, :focus) {
+  color: #FC8A11;
+  background-color: transparent;
+  border-color: #FC8A11;
+
 }
 
 .modal-girl {
@@ -233,6 +249,7 @@
 
       margin: auto;
       padding: 40px;
+      overflow: hidden;
   }
 
   .modal-products-list {
@@ -255,14 +272,20 @@
 
   .modal-checkbox {
       margin-left: 166px;
-
-
   }
 
   .modal-products-cart {
     margin-top: 40px;
     margin-bottom: 10px;
 
+  }
+
+  input:invalid {
+    border: 2px solid #FC8A11;;
+  }
+
+  input:valid {
+    border: 2px solid #A1C487;
   }
 
   .modal-input, .modal-textarea {
@@ -289,7 +312,6 @@
     background-image: url(../img/modal/modal-girl-tabl.png);
     background-repeat: no-repeat;
     background-size: 290px cover;
-
   }
 
 
@@ -300,11 +322,6 @@
     .modal-girl {
       background-image: url(../img/modal/modal-girl-tabl2x.png);}
     }
-
-
-
-
-
 }
 
 @media screen and (min-width: 1280px) {
