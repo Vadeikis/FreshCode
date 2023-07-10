@@ -138,10 +138,7 @@
     stroke: #77AC63;
   }
 
-.mob-menu-backet:hover {
-  stroke: #141414;
-  fill: #141414;
-}
+
 
 .active:hover {
   color: #467734;
