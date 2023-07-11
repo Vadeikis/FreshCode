@@ -21,20 +21,23 @@
 
 .backdrop {
   position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0) scale(1);
   top: 0;
   z-index: 2;
   width: 335px;
   min-height: 903px;
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  background-color: #e7e9fc;
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,7 +47,9 @@
   border: none;
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
   transform: translate(-50%, -50%) scaleY(1);
-  transition: transform 300ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  min-height: 903px;
 }
 
 .backdrop.is-hidden .modal {
@@ -63,7 +68,7 @@
 }
 
 .modal-close {
-  fill: #111;
+  stroke: #111;
 }
 
 .modal-title {
@@ -103,6 +108,7 @@
 }
 
 .modal-products-subtitle {
+  width: 100%;
   color: #141414;
   font-family: DM Sans;
   font-size: 18px;
@@ -134,27 +140,25 @@
   width: 16px;
   height: 16px;
   border: 1px solid #A1C487;
-  border-radius: 2px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-
 }
 
-.input-chek:checked + .check-text span {
-  background-color: #ffffff;
-  border-radius: 2px;
+.input-check:checked + .check-text span {
+  background-color: #FAF3E7;
+  border-radius: 4px;
   border-color: #A1C487;
   fill: #A1C487;
 }
 
 .modal-products-item > img {
-
   width: 94px;
   height: 78px;
   margin-top: 33px;
-  margin-right: 33px;
+  margin-right: 30px;
 
 }
 
@@ -173,7 +177,7 @@
   padding: 0 24px;
   border: 1px solid rgba(20, 20, 20, 0.30);
   margin-bottom: 14px;
-  transition: border-color 300ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .modal-input:hover, .modal-input:focus {
@@ -211,14 +215,13 @@
   background-color: #FC8A11;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: color 300ms linear, background-color 300ms linear, border-color 300ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-btn:is(:hover, :focus) {
+.modal-form-btn:hover {
   color: #FC8A11;
   background-color: transparent;
   border-color: #FC8A11;
-
 }
 
 .modal-girl {
@@ -247,8 +250,10 @@
 
       margin: auto;
       padding: 40px;
-      overflow: hidden;
+      /* overflow: hidden; */
+      height: 853px;
   }
+
 
   .modal-products-list {
       flex-wrap: nowrap;
@@ -270,6 +275,11 @@
 
   .modal-checkbox {
       margin-left: 166px;
+  }
+
+  .check-text span {
+    width: 20px;
+    height: 20px;
   }
 
   .modal-products-cart {
@@ -294,6 +304,7 @@
     display: flex;
 
   }
+
 
   .modal-form {
     max-width: 306px;
@@ -332,16 +343,14 @@
     min-height: 911px;
   }
 
-  .modal {
-
-
-  }
-
   .modal-products-list {
     width: 811px;
     gap: 20px;
   }
 
+  .modal {
+    max-width: 911px;
+  }
   .modal-products-item {
     height: 308px;
     width: calc((100% - 20px * 2) / 3);
@@ -355,8 +364,6 @@
   .modal-checkbox {
     margin: 14px 14px 274px 223px;
   }
-
-
 
   .modal-girl {
     left: 440px;
