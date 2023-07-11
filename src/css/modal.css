@@ -48,6 +48,8 @@
   box-shadow: 0px 0px 8.775463104248047px 0px rgba(0, 0, 0, 0.01), 0px 0px 18.17037010192871px 0px rgba(0, 0, 0, 0.02), 0px 0px 36.23749923706055px 0px rgba(0, 0, 0, 0.03), 0px 0px 71.02963256835938px 0px rgba(0, 0, 0, 0.03), 0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04), 0px 0px 223px 0px rgba(0, 0, 0, 0.05);
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  height: 600px;
   overflow-y: auto;
   min-height: 903px;
 }
@@ -184,6 +186,8 @@
   border-color: #A1C487;
 }
 
+
+
 .modal-input::placeholder, .modal-textarea::placeholder  {
   color: rgba(20, 20, 20, 0.50);
   font-family: DM Sans;
@@ -250,6 +254,7 @@
 
       margin: auto;
       padding: 40px;
+      overflow: hidden;
       /* overflow: hidden; */
       height: 853px;
   }
@@ -318,7 +323,7 @@
     top: 415px;
     height: 100%;
     width: 100%;
-    background-image: url(./img/modal/modal-girl-tabl.png);
+    background-image: url(../img/modal/modal-girl-tabl.png);
     background-repeat: no-repeat;
     background-size: 290px cover;
   }
@@ -329,7 +334,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .modal-girl {
-      background-image: url(./img/modal/modal-girl-tabl2x.png);}
+      background-image: url(../img/modal/modal-girl-tabl2x.png);}
     }
 }
 
@@ -370,7 +375,7 @@
     top: 461px;
     height: 100%;
     width: 100%;
-    background-image: url(./img/modal/modal-girl.png);
+    background-image: url(../img/modal/modal-girl.png);
     background-size: 444px;
   }
 
@@ -378,7 +383,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .modal-girl {
-      background-image: url(./img/modal/modal-girl-tabl2x.png);
+      background-image: url(../img/modal/modal-girl-tabl2x.png);
     }
   }
 }
