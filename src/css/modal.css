@@ -37,7 +37,7 @@
 
 
 .modal {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -50,9 +50,8 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: scroll;
   height: 600px;
-  overflow-y: auto;
-  min-height: 903px;
 }
+
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
@@ -206,7 +205,6 @@
   resize: none;
   border: 1px solid rgba(20, 20, 20, 0.30);
 }
-
 .modal-form-btn {
   color: #FFF;
   font-family: DM Sans;
@@ -255,7 +253,6 @@
       margin: auto;
       padding: 40px;
       overflow: hidden;
-      /* overflow: hidden; */
       height: 853px;
   }
 
