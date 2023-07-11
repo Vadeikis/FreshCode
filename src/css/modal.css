@@ -184,8 +184,6 @@
   border-color: #A1C487;
 }
 
-
-
 .modal-input::placeholder, .modal-textarea::placeholder  {
   color: rgba(20, 20, 20, 0.50);
   font-family: DM Sans;
@@ -320,7 +318,7 @@
     top: 415px;
     height: 100%;
     width: 100%;
-    background-image: url(../img/modal/modal-girl-tabl.png);
+    background-image: url(./img/modal/modal-girl-tabl.png);
     background-repeat: no-repeat;
     background-size: 290px cover;
   }
@@ -331,7 +329,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .modal-girl {
-      background-image: url(../img/modal/modal-girl-tabl2x.png);}
+      background-image: url(./img/modal/modal-girl-tabl2x.png);}
     }
 }
 
@@ -372,7 +370,7 @@
     top: 461px;
     height: 100%;
     width: 100%;
-    background-image: url(../img/modal/modal-girl.png);
+    background-image: url(./img/modal/modal-girl.png);
     background-size: 444px;
   }
 
@@ -380,7 +378,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .modal-girl {
-      background-image: url(../img/modal/modal-girl-tabl2x.png);
+      background-image: url(./img/modal/modal-girl-tabl2x.png);
     }
   }
 }
