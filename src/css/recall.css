@@ -83,8 +83,8 @@
 
 .submit-container {
   width: 335px;
-  height: 388px;
-  padding-bottom: 40px;
+  height: 236px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
