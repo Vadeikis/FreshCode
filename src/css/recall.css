@@ -1,6 +1,4 @@
 .recall {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -56,7 +54,9 @@
   height: 48px;
   padding: 15px 0 15px 24px;
 }
-
+.recall-input:invalid {
+  border: 1px solid #c1bdbd;
+}
 .recall-btn {
   border-radius: 100px;
   background-color: #fc8a11;
@@ -83,6 +83,7 @@
 
 .submit-container {
   width: 335px;
+  height: 388px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -97,7 +98,7 @@
   border-radius: 40px;
   background-color: #faf3e7;
   max-width: 100%;
-  background-image: url(../img/img-recall/polkadot.svg);
+  background-image: url(/img/img-recall/polkadot.svg);
   background-repeat: repeat;
   background-position: -12px -10px;
 }
@@ -110,8 +111,6 @@
 @media screen and (min-width: 768px) {
   .recall {
     padding-bottom: 173px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .recall-title {
     width: 524px;
@@ -131,6 +130,7 @@
     width: 350px;
     height: 48px;
   }
+
   .recall-image-container {
     width: 704px;
     height: 463px;
@@ -195,4 +195,3 @@
     height: auto;
   }
 }
-
