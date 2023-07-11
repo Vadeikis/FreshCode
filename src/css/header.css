@@ -9,7 +9,10 @@
 .header-item-svg {
   display: none;
 }
-
+.mob-container{
+  width: 375px;
+  margin: auto;
+}
 .header-nav {
   display: flex;
   gap: 8px;
