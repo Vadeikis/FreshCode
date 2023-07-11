@@ -9,6 +9,7 @@
 .header-item-svg {
   display: none;
 }
+
 .header-nav {
   display: flex;
   gap: 8px;
@@ -82,7 +83,6 @@
   top: 0;
   z-index: 2;
   width: 100vw;
-  height: 100vh;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -111,6 +111,7 @@
 .header-nav-mob {
   display: flex;
   padding: 17px 0px 17px 20px;
+  height: 50px;
 }
 .mb-list {
   max-width: 375px;
