@@ -49,7 +49,7 @@
 .vegetables-secondary-heading {
   color: #141414;
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -61,7 +61,7 @@
 .vegetables-text {
   color: #141414;
   text-align: center;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -146,7 +146,7 @@
   .vegetables-container {
     max-width: 375px;
   }
-  ..vegetables-list-item {
+  .vegetables-list-item {
     max-width: 335px;
   }
 }
@@ -161,7 +161,7 @@
     margin: 0 auto;
     color: #141414;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 28px;
     font-weight: 500;
     line-height: 32px;
@@ -173,7 +173,7 @@
   .vegetables-text {
     margin: 0 auto;
     color: #141414;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -232,7 +232,7 @@
   .vegetables-order-btn {
     width: 114px;
     height: 114px;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
@@ -261,7 +261,7 @@
     margin: 0 auto;
     color: #141414;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 40px;
     font-weight: 500;
     line-height: 44px;
@@ -275,7 +275,7 @@
   .vegetables-text {
     color: #141414;
     text-align: center;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -308,7 +308,7 @@
   .vegetables-order-btn {
     width: 114px;
     height: 114px;
-    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
