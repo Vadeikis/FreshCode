@@ -74,7 +74,7 @@
 
 .modal-title {
   color: #141414;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-family: DM Sans;
   font-size: 28px;
   font-style: normal;
@@ -239,7 +239,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: A1C487;
+  background: #A1C487;
   border-radius: 10px;
   border: 3px solid  #A1C487;
 }
@@ -339,9 +339,9 @@
     top: 415px;
     height: 100%;
     width: 100%;
-    background-image: url(../img/modal/modal-girl-tabl.png);
+    background-image: url(/img/modal/modal-girl-tabl.png);
     background-repeat: no-repeat;
-    background-size: 290px cover;
+    background-size: 290px;
   }
 
 
@@ -350,7 +350,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .modal-girl {
-      background-image: url(../img/modal/modal-girl-tabl2x.png);}
+      background-image: url(/img/modal/modal-girl-tabl2x.png);}
     }
 }
 
@@ -392,7 +392,7 @@
     top: 461px;
     height: 100%;
     width: 100%;
-    background-image: url(../img/modal/modal-girl.png);
+    background-image: url(/img/modal/modal-girl.png);
     background-size: 444px;
   }
 
@@ -400,7 +400,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .modal-girl {
-      background-image: url(../img/modal/modal-girl-tabl2x.png);
+      background-image: url(/img/modal/modal-girl-tabl2x.png);
     }
   }
 }

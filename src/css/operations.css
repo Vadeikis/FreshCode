@@ -218,6 +218,8 @@
     font-size: 48px;
     line-height: 1.04;
     letter-spacing: -1.92px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
     max-width: 614px;
   }
   .photo-broccoli {
@@ -232,7 +234,7 @@
   .operation-item {
     flex-shrink: 0;
     max-width: 339px;
-    letter-spacing: -0.12;
+    letter-spacing: -0.04em;
   }
   .operation-text .operation-item:last-child {
     max-width: 294px;
@@ -253,6 +255,8 @@
     line-height: 1.1;
     letter-spacing: -1.6px;
     max-width: 512px;
+    letter-spacing: -0.04em;
+    width: 512px;
   }
   .instruction-list {
     gap: 28px;

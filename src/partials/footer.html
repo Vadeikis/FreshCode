@@ -4,41 +4,46 @@
       <div class="footer-blocks">
         <ul class="footer-list">
           <li class="footer-link">
-            <img
-              class="footer-link-image"
-              srcset="
-                /img/footer/img_vegetables.jpg   1x,
-                /img/footer/img_vegetables2x.jpg 2x
-              "
-              src="/img/footer/img_vegetables.jpg"
-              alt="broccoli"
-            />
+            <picture>
+              <source
+                srcset="
+                  /img/footer/img_vegetables.webp   1x,
+                  /img/footer/img_vegetables2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  /img/footer/img_vegetables.png   1x,
+                  /img/footer/img_vegetables2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="footer-link-image"
+                src="/img/footer/img_vegetables.webp"
+                alt="vegetables"
+              />
+            </picture>
           </li>
           <li class="footer-link">
             <nav class="footer-nav">
               <a class="footer-logo-link" href="/index.html">
                 <svg class="footer-logo" width="16" height="16">
-                  <use href="/img/footer/icons.svg#icon-vector-1"></use></svg
-                >Veggieboost</a
+                  <use href="/img/footer/icons.svg#icon-vector-1"></use></svg>Veggieboost</a
               >
             </nav>
           </li>
         </ul>
         <ul class="footer-list-nav">
           <li>
-            <a class="footer-list-nav-link" href="#operations"
-              >How It Works</a
-            >
+            <a class="footer-list-nav-link" href="#operations">How It Works</a>
           </li>
           <li>
-            <a class="footer-list-nav-link" href="#vegetables"
-              >Vegetables</a
-            >
+            <a class="footer-list-nav-link" href="#vegetables">Vegetables</a>
           </li>
           <li>
-            <a class="footer-list-nav-link" href="#contacts"
-              >Contacts</a
-            >
+            <a class="footer-list-nav-link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </div>
@@ -70,12 +75,12 @@
         </div>
         <div class="footer-contact">
           <ul class="footer-contact-list">
-            <il class="footer-contact-link">
+            <li class="footer-contact-link">
               <a class="footer-tel" href="tel:+380684439426"
                 >+380 (68) 443-94-26</a
               >
-            </il>
-            <il class="footer-contact-link">
+            </li>
+            <li class="footer-contact-link">
               <address class="footer-address">
                 <a
                   class="footer-address-link"
@@ -86,7 +91,7 @@
                   UT 84104
                 </a>
               </address>
-            </il>
+            </li>
           </ul>
         </div>
       </div>
