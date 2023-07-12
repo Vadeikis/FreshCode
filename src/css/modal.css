@@ -254,6 +254,7 @@
       padding: 40px;
       overflow: hidden;
       height: 853px;
+      overflow-y: scroll;
   }
 
 
@@ -351,7 +352,8 @@
   }
 
   .modal {
-    max-width: 911px;
+    max-width: 891px;
+    overflow-y: scroll;
   }
   .modal-products-item {
     height: 308px;
