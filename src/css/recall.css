@@ -54,9 +54,17 @@
   height: 48px;
   padding: 15px 0 15px 24px;
 }
+
+.recall-input:hover,
+.recall-input:focus,
+.recall-input:active {
+  border-color: #fc8a11;
+}
+
 .recall-input:invalid {
   border: 1px solid #c1bdbd;
 }
+
 .recall-btn {
   border-radius: 100px;
   background-color: #fc8a11;
@@ -64,6 +72,8 @@
   border: none;
   margin-left: -114px;
   padding: 15px 35px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .recall-btn:is(:hover, :focus) {
   color: #fc8a11;
