@@ -15,8 +15,8 @@
     />
 
     
-    <script type="module" crossorigin src="/FreshCode/assets/index-a07fb873.js"></script>
-    <link rel="stylesheet" href="/FreshCode/assets/index-7c4e7481.css">
+    <script type="module" crossorigin src="/FreshCode/assets/index-0b28157f.js"></script>
+    <link rel="stylesheet" href="/FreshCode/assets/index-7308a1b3.css">
   </head>
   <body>
     <!-- Катя Л. -->
@@ -496,12 +496,28 @@
     </div>
     <div class="recall-image-container">
       <div class="imagine-container">
-        <img
-          class="imagine-girl"
-          srcset="/FreshCode/assets/img-girl-d7f06c80.png 1x, /FreshCode/assets/img-girl@2x-a2957132.png 2x"
-          src="/FreshCode/assets/img-girl-d7f06c80.png"
-          alt="girl"
-        />
+        <picture>
+          <source
+            srcset="/FreshCode/assets/img_girl_tab-43748df9.webp "
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/FreshCode/assets/img_girl-aae30b4f.webp "
+            type="image/webp"
+            media="(min-width: 375px)"
+          />
+          <source
+            srcset="./img/img-recall/tab/img_girl_des.webp"
+            type="image/webp"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="imagine-girl"
+            src="/FreshCode/assets/img _girl_des-aaddf533.webp"
+            alt="girl"
+          />
+        </picture>
       </div>
     </div>
   </div>
