@@ -151,19 +151,20 @@
 }
 .button_icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: none;
   stroke: #77ac63;
 }
 .button_icon:hover,
 .button_icon:focus {
   stroke: #a1c487;
+}
+.header-bt {
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header-bt:hover,
 .header-bt:focus {
   stroke: #a1c487;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mb-menu-list {
   background-color: #a1c487;
@@ -178,10 +179,11 @@
 .mob-menu-backet:focus {
   stroke: #467734;
 }
-
+.active {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .active:hover {
   color: #467734;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item-backet {
@@ -225,10 +227,12 @@
   .logo-header {
     margin-right: 8px;
   }
-
+  .active {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .active:hover {
     position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     color: #77ac63;
   }
 

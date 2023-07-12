@@ -82,15 +82,19 @@
   gap: 20px;
 }
 
-.footer-list-nav-link:hover,
-.footer-list-nav-link:focus {
-  color: var(--green-background);
+.footer-list-nav-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-list-nav-link:hover,
+.footer-list-nav-link:focus {
+  color: var(--green-background);
+}
+.footer-tel {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-tel:is(:hover, :focus) {
   color: var(--green-background);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc {
@@ -126,7 +130,6 @@
   border: 1px solid var(--green-background);
   border-color: var(--green-background);
   fill: var(--green-background);
-
 }
 
 .footer-contact-list {
@@ -165,9 +168,12 @@
   height: 54px;
 }
 
+.footer-address-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-address-link:is(:hover, :focus) {
   color: var(--green-background);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
