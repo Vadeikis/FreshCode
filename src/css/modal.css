@@ -230,6 +230,24 @@
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF3E7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: A1C487;
+  border-radius: 10px;
+  border: 3px solid  #A1C487;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A1C487;
+}
+
 
 @media screen and (min-width: 375px) {
   .container {
