@@ -7,34 +7,36 @@
       <picture class="photo-broccoli">
         <source
           srcset="
-            ./img/operations/macro-cabbage.webp    1x,
-            ./img/operations/macro-cabbage@2x.webp 2x
+            ./img/operations/macro-cabbage-mobile.png 1x,
+            ./img/about/macro-cabbage-mobile@2x.png   2x
           "
-          type="image/webp"
-        />
-        <source
-          srcset="
-            ./img/operations/macro-cabbage.png    1x,
-            ./img/operations/macro-cabbage@2x.png 2x
-          "
+          media="(max-width:767.99px)"
           type="image/png"
         />
+
+        <source
+          srcset="
+            ./img/operations/macro-cabbage-tablet.png 1x,
+            ./img/about/macro-cabbage-tablet@2x.png   2x
+          "
+          media="(max-width:1279.99px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./img/operations/macro-cabbage-pc.png 1x,
+            ./img/about/macro-cabbage-pc@2x.png   2x
+          "
+          media="(min-width:1280px)"
+          type="image/png"
+        />
+
         <img
-          src="./img/operations/macro-cabbage.png"
-          alt="macro photo of broccoli"
+          src="./img/operations/macro-cabbage-mobile.png"
+          alt="Macro picture of broccoli"
         />
       </picture>
-      <img
-        srcset="
-          ./img/operations/macro-cabbage.jpg    1x,
-          ./img/operations/macro-cabbage@2x.jpg 2x
-        "
-        src="./img/operations/macro-cabbage.jpg"
-        alt="macro photo of broccoli"
-        width="335"
-        height="158"
-        class="photo-broccoli"
-      />
     </div>
     <ul class="operation-text">
       <li class="operation-item">
@@ -69,32 +71,33 @@
       <picture class="photo-girl">
         <source
           srcset="
-            ./img/operations/girl-bokchoi.webp    1x,
-            ./img/operations/girl-bokchoi@2x.webp 2x
+            ./img/operations/girl-bokchoy-mobile.png    1x,
+            ./img/operations/girl-bokchoy-mobile@2x.png 2x
           "
-          type="image/webp"
+          media="(max-width:767.99px)"
+          type="image/png"
         />
         <source
           srcset="
-            ./img/operations/girl-bokchoi.png    1x,
-            ./img/operations/girl-bokchoi@2x.png 2x
+            ./img/operations/girl-bokchoy-tablet.png    1x,
+            ./img/operations/girl-bokchoy-tablet@2x.png 2x
           "
+          media="(max-width:1279.99px)"
           type="image/png"
         />
-
-        <img src="../img/operations/girl-bokchoi.png" alt="girl with bokchoy" />
+        <source
+          srcset="
+            ./img/operations/girl-bokchoy-pc.png        1x,
+            ./img/operations/girl-bokchoy-tablet@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img
+          src="./img/operations/girl-bokchoy-pc.png"
+          alt="Girl with bokchoy"
+        />
       </picture>
-      <img
-        srcset="
-          ./img/operations/girl-bokchoy.png    1x,
-          ./img/operations/girl-bokchoy@2x.png 2x
-        "
-        src="./img/operations/girl-bokchoy.png"
-        alt="macro photo of broccoli"
-        width="335"
-        height="158"
-        class="photo-girl"
-      />
     </div>
   </div>
 </section>
