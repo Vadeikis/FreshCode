@@ -196,9 +196,9 @@
     max-width: 219px;
   }
   .photo-girl {
+    flex-shrink: 0;
     max-width: 350px;
-    max-height: 446px;
-    margin-bottom: 0;
+    left: 0;
   }
 }
 
