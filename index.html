@@ -15,8 +15,8 @@
     />
 
     
-    <script type="module" crossorigin src="/FreshCode/assets/index-de94de35.js"></script>
-    <link rel="stylesheet" href="/FreshCode/assets/index-4dc061e4.css">
+    <script type="module" crossorigin src="/FreshCode/assets/index-8f994813.js"></script>
+    <link rel="stylesheet" href="/FreshCode/assets/index-28f410c1.css">
   </head>
   <body>
     <!-- Катя Л. -->
@@ -218,26 +218,37 @@
       </h2>
       <picture class="photo-broccoli">
         <source
-          srcset="/FreshCode/assets/macro-cabbage-a823c421.webp 1x, /FreshCode/assets/macro-cabbage@2x-b01dacec.webp 2x"
-          type="image/webp"
-        />
-        <source
-          srcset="/FreshCode/assets/macro-cabbage-b9244d8b.png 1x, /FreshCode/assets/macro-cabbage@2x-1237df78.png 2x"
+          srcset="
+            ./img/operations/macro-cabbage-mobile.png 1x,
+            ./img/about/macro-cabbage-mobile@2x.png   2x
+          "
+          media="(max-width:767.99px)"
           type="image/png"
         />
+
+        <source
+          srcset="
+            ./img/operations/macro-cabbage-tablet.png 1x,
+            ./img/about/macro-cabbage-tablet@2x.png   2x
+          "
+          media="(max-width:1279.99px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./img/operations/macro-cabbage-pc.png 1x,
+            ./img/about/macro-cabbage-pc@2x.png   2x
+          "
+          media="(min-width:1280px)"
+          type="image/png"
+        />
+
         <img
-          src="/FreshCode/assets/macro-cabbage-b9244d8b.png"
-          alt="macro photo of broccoli"
+          src="/FreshCode/assets/macro-cabbage-mobile-e9ad5211.png"
+          alt="Macro picture of broccoli"
         />
       </picture>
-      <img
-        srcset="/FreshCode/assets/macro-cabbage-207a2512.jpg 1x, /FreshCode/assets/macro-cabbage@2x-6724447a.jpg 2x"
-        src="/FreshCode/assets/macro-cabbage-207a2512.jpg"
-        alt="macro photo of broccoli"
-        width="335"
-        height="158"
-        class="photo-broccoli"
-      />
     </div>
     <ul class="operation-text">
       <li class="operation-item">
@@ -271,27 +282,25 @@
       </div>
       <picture class="photo-girl">
         <source
-          srcset="/FreshCode/assets/girl-bokchoi-f455a136.webp 1x, /FreshCode/assets/girl-bokchoi@2x-de934ad1.webp 2x"
-          type="image/webp"
-        />
-        <source
-          srcset="/FreshCode/assets/girl-bokchoi-2df78cca.png 1x, /FreshCode/assets/girl-bokchoi@2x-3207bca8.png 2x"
+          srcset="/FreshCode/assets/girl-bokchoy-mobile-66b44621.png 1x, /FreshCode/assets/girl-bokchoy-mobile@2x-f8b7b811.png 2x"
+          media="(max-width:767.99px)"
           type="image/png"
         />
-
-        <img src="../img/operations/girl-bokchoi.png" alt="girl with bokchoy" />
+        <source
+          srcset="/FreshCode/assets/girl-bokchoy-tablet-1ff3d414.png 1x, /FreshCode/assets/girl-bokchoy-tablet@2x-5b056dec.png 2x"
+          media="(max-width:1279.99px)"
+          type="image/png"
+        />
+        <source
+          srcset="/FreshCode/assets/girl-bokchoy-pc-2df78cca.png 1x, /FreshCode/assets/girl-bokchoy-tablet@2x-5b056dec.png 2x"
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img
+          src="/FreshCode/assets/girl-bokchoy-pc-2df78cca.png"
+          alt="Girl with bokchoy"
+        />
       </picture>
-      <img
-        srcset="
-          ./img/operations/girl-bokchoy.png    1x,
-          ./img/operations/girl-bokchoy@2x.png 2x
-        "
-        src="./img/operations/girl-bokchoy.png"
-        alt="macro photo of broccoli"
-        width="335"
-        height="158"
-        class="photo-girl"
-      />
     </div>
   </div>
 </section>
