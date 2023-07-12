@@ -5,7 +5,7 @@
   margin-right: auto;
 }
 .operations-section {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 .operations-container {
   display: flex;
@@ -19,24 +19,22 @@
 }
 
 .operations-title {
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -0.07em;
+  letter-spacing: -1.12px;
   text-transform: uppercase;
 }
 .photo-broccoli {
   border-radius: 100px;
 }
 .operation-text {
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.28;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.56px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -52,24 +50,23 @@
   background-position: -12px -10px;
   border-radius: 40px;
   margin-top: 80px;
-  gap: 20px;
 }
 .instruction-title {
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.16;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.96px;
   text-transform: uppercase;
   padding-top: 40px;
   margin: 0;
+  max-width: 295px;
 }
 
 .instruction-list {
   counter-reset: myCounter;
   padding: 20px 40px 20px 0px;
-  margin-bottom: -40px;
+
   display: flex;
   flex-direction: column;
   gap: 21px;
@@ -81,12 +78,12 @@
   list-style: none;
   position: relative;
   padding-left: 53px;
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.28;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.72px;
   max-width: 228px;
 }
 .instruction-item::before {
@@ -99,13 +96,21 @@
   position: absolute;
   text-align: center;
   line-height: 38px;
-  width: 38px;
+  width: 40px;
   height: 38px;
   left: 0;
   top: 0;
   bottom: 0;
   margin: auto;
 }
+.instruction-list :not(:first-child):not(:last-child) {
+  max-width: 219px;
+}
+.photo-girl {
+  max-width: 258px;
+  margin: 0 auto;
+}
+
 /*==================MOBILE MEDIA==================*/
 @media screen and (min-width: 375px) {
   .container-op {
@@ -119,7 +124,7 @@
     padding: 0px 32px;
   }
   .operations-section {
-    padding-top: 100px;
+    margin-top: 100px;
   }
   .operations-container {
     gap: 40px;
@@ -133,17 +138,18 @@
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -1.6px;
+    max-width: 386px;
   }
   .photo-broccoli {
     flex-shrink: 0;
-    width: 310px;
-    height: 176px;
+    max-width: 310px;
   }
   .operation-text {
     flex-direction: row;
     justify-content: flex-start;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: -0.72px;
   }
   .operation-item {
     flex-shrink: 0;
@@ -155,23 +161,20 @@
   .instruction-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    padding-top: 40px;
-    margin-top: 60px;
+    padding: 40px 40px 0 0;
+    margin: 60px 0 0 0;
     width: 100%;
   }
   .instruction-title {
     font-size: 28px;
     line-height: 1.14;
-    letter-spacing: -0.07em;
+    letter-spacing: -1.12px;
   }
-  .photo-girl {
-    flex-shrink: 0;
-  }
+
   .instruction-list {
-    flex-grow: 0;
     gap: 24px;
     padding-top: 0;
     margin-bottom: 0;
@@ -183,19 +186,29 @@
     gap: 40px;
   }
   .instruction-item {
-    max-width: 275px;
+    max-width: 225px;
+  }
+  .instruction-item::before {
+    width: 46px;
+    height: 44px;
   }
   .instruction-list :not(:first-child):not(:last-child) {
     max-width: 219px;
   }
+  .photo-girl {
+    max-width: 350px;
+    max-height: 446px;
+    margin-bottom: 0;
+  }
 }
+
 /*==================DESKTOP MEDIA==================*/
 @media screen and (min-width: 1280px) {
   .container-op {
     max-width: 1280px;
   }
   .operations-section {
-    padding-top: 124px;
+    margin-top: 124px;
   }
   .operations-motto {
     gap: 192px;
@@ -203,14 +216,13 @@
   }
   .operations-title {
     font-size: 48px;
-    line-height: 1.29;
-    letter-spacing: -0.12em;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
     max-width: 614px;
   }
   .photo-broccoli {
     flex-shrink: 0;
-    width: 410px;
-    height: 170px;
+    max-width: 410px;
   }
   .operation-text {
     max-width: 687px;
@@ -234,13 +246,13 @@
     justify-content: space-evenly;
   }
   .instruction-table {
-    gap: 44px;
+    gap: 40px;
   }
   .instruction-title {
     font-size: 40px;
     line-height: 1.1;
-    letter-spacing: -0.1em;
-    width: 512px;
+    letter-spacing: -1.6px;
+    max-width: 512px;
   }
   .instruction-list {
     gap: 28px;
@@ -248,6 +260,7 @@
   }
   .instruction-item {
     max-width: 380px;
+    letter-spacing: -0.56px;
   }
   .instruction-list :not(:first-child):not(:last-child) {
     max-width: 219px;
