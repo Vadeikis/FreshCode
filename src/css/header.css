@@ -9,7 +9,7 @@
 .header-item-svg {
   display: none;
 }
-.mob-container{
+.mob-container {
   width: 375px;
   margin: auto;
 }
@@ -37,35 +37,47 @@
 .logo-header {
   margin-right: 8px;
 }
-.logo-header
-
- {
-  animation: pulse 5s infinite; 
+.logo-header {
+  animation: pulse 3s ease-in-out infinite;
 }
- /* фрейм анімація для лого */
+/* фрейм анімація для лого */
 @keyframes pulse {
   0% {
     transform: scale(1);
   }
-  25% {
+  10% {
+    transform: scale(1.05);
+  }
+  20% {
     transform: scale(1.1);
   }
-  50% {
-    transform: scale(1.2); 
+  30% {
+    transform: scale(1.15);
   }
-  75% {
-    transform: scale(1.1); 
+  40% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1.05);
   }
   100% {
-    transform: scale(1); 
+    transform: scale(1);
   }
-
 }
 
-
 .header-bt {
-  position: absolute;
-  margin-left: auto;
   background-color: transparent;
   border: none;
   right: 20px;
@@ -157,25 +169,22 @@
   background-color: #a1c487;
 }
 
-
-  .mob-menu-backet {
-    stroke:#fff;
-    fill: none;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .mob-menu-backet:hover,
-  .mob-menu-backet:focus{
-    stroke: #467734;
-  }
-
-
+.mob-menu-backet {
+  stroke: #fff;
+  fill: none;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-backet:hover,
+.mob-menu-backet:focus {
+  stroke: #467734;
+}
 
 .active:hover {
   color: #467734;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item-backet{
+.header-item-backet {
   transition: transform 0.3s ease-in-out;
 }
 .header-item-backet:hover {
@@ -225,7 +234,6 @@
 
   .header-item-svg {
     display: block;
-   
   }
 
   .header-item-backet {
@@ -237,18 +245,16 @@
   .header-item-svg {
     display: flex;
     background-color: transparent;
-    border:none;
+    border: none;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-item-svg:hover,
   .header-item-svg:focus {
     stroke: #a1c487;
-
   }
   .header-item-backet:hover,
   .header-item-backet:focus {
     stroke: #a1c487;
-
   }
 }
 
@@ -280,9 +286,9 @@
     margin-right: 8px;
   }
   .header-item-svg {
-display: flex;
+    display: flex;
     background-color: transparent;
-    border:none;
+    border: none;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -294,6 +300,5 @@ display: flex;
   .header-item-backet:hover,
   .header-item-backet:focus {
     stroke: #a1c487;
-    
   }
 }
