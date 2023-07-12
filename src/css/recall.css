@@ -113,6 +113,10 @@
   margin-top: 30px;
   z-index: 1;
 }
+.imagine-girl {
+  width: 100%;
+  height: 100%;
+}
 @media screen and (min-width: 768px) {
   .recall {
     padding-bottom: 173px;
@@ -142,6 +146,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    border-radius: 80px;
   }
   .imagine-container {
     margin: 0;
@@ -153,8 +158,8 @@
     padding-bottom: 0;
   }
   .imagine-girl {
-    width: auto;
-    height: 446px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -193,10 +198,10 @@
 
   .recall-image-container {
     width: 525px;
-    height: 526px;
+    height: 536px;
   }
   .imagine-girl {
-    width: 459px;
-    height: auto;
+    width: 100%;
+    height: 499px;
   }
 }

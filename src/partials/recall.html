@@ -26,19 +26,27 @@
     <div class="recall-image-container">
       <div class="imagine-container">
         <picture>
-          <source srcset="/img/img-recall/img_girl.webp" type="image/webp">
-          <source srcset="/img/img-recall/img_girl.png" type="image/png">
-          <img class="imagine-girl" src="/img/img-recall/img_girl.webp" alt="girl">
+          <source
+            srcset="./img/img-recall/tab/img_girl_tab.webp"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./img/img-recall/img_girl.webp"
+            type="image/webp"
+            media="(min-width: 375px)"
+          />
+          <source
+            srcset="./img/img-recall/tab/img_girl_des.webp"
+            type="image/webp"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="imagine-girl"
+            src="./img/img-recall/des/img _girl_des.webp"
+            alt="girl"
+          />
         </picture>
-        <!-- <img
-          class="imagine-girl"
-          srcset="
-            /img/img-recall/img-girl.png    1x,
-            /img/img-recall/img-girl@2x.png 2x
-          "
-          src="/img/img-recall/img-girl.png"
-          alt="girl"
-        /> -->
       </div>
     </div>
   </div>
