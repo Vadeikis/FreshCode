@@ -31,8 +31,7 @@
   width: 335px;
   height: 172px;
   border-radius: 100px;
-  background: url(<path-to-image>),
-    lightgray 0px -43.24px / 100% 194.972% no-repeat;
+  background: lightgray 0px -43.24px / 100% 194.972% no-repeat;
 }
 .footer-nav {
   display: flex;
