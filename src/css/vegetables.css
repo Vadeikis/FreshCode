@@ -141,20 +141,19 @@
   bottom: 20px;
 }
 .vegetables-image {
-
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .vegetables-image:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .vegetables-image img {
-  transition: opacity 0.3s ease-in-out; 
+  transition: opacity 0.3s ease-in-out;
 }
 
 .vegetables-image:hover img {
-  opacity: 0.8; 
+  opacity: 0.8;
 }
 
 /* phone */
