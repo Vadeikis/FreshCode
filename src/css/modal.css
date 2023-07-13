@@ -273,6 +273,7 @@
   }
 
   .modal {
+    top: 50%;
     margin: auto;
     padding: 40px;
     overflow: hidden;
@@ -370,6 +371,7 @@
 
   .modal {
     max-width: 891px;
+    top: 50%;
     overflow-y: scroll;
   }
   .modal-products-item {
